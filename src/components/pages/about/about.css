@@ -1,0 +1,133 @@
+.main {
+  width: 100%;
+}
+.main__img img {
+  height: 60vh;
+  width: 100%;
+}
+.main .box {
+  width: 30%;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px 30px 0;
+  margin-bottom: -7px;
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 110px;
+}
+.main .box h3 {
+  font-size: 55px;
+  color: #ff97a4;
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+.main .box img {
+  padding: 5px 0px 18px 0px;
+}
+.main .box p {
+  margin-bottom: 15px;
+}
+.about__us .container {
+  padding: 100px 70px 30px 70px;
+}
+
+.welcome__bottom .welcome__cards .welcome__card .text {
+  color: #8d8d8d;
+  font-size: 14px;
+  padding: 0px 50px;
+  line-height: 20px;
+}
+
+.first .container {
+  padding: 50px 100px;
+}
+
+.first .container .support {
+  padding: 40px 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.first .container .support .progress__bar {
+  width: 70%;
+  line-height: 50px;
+}
+
+.first .container .support .picture img {
+  width: 420px;
+  height: 520px;
+  border-radius: 10px;
+  z-index: 2;
+  position: absolute;
+}
+
+.first .container .support .background_line {
+  border-radius: 10px;
+  width: 420px;
+  height: 520px;
+  border: 4px solid #7dd0f8;
+  z-index: 1;
+  margin: 20px -20px 20px -20px;
+}
+
+.first .container .support .content {
+  margin: auto 0;
+}
+.first .container .support .content h1 {
+  font-size: 38px;
+  color: #ff97a4;
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+.first .container .support .content img {
+  padding: 10px 0px 40px 0px;
+}
+
+.first .container .support .content p {
+  color: #8d8d8d;
+  padding-right: 120px;
+  line-height: 27px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.first .container .support .content .learnmore {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  padding: 0 22px;
+  background-image: url(../../../assets//img/btn-01.png);
+  background: center contain no-repeat;
+  padding: 20 22px;
+  width: 157px;
+  height: 55px;
+}
+.first .container .support .content .learnmore a {
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.first .container .support .content .learnmore h4 {
+  margin-right: 5px;
+}
+*/ .about__last {
+  margin-top: 60px;
+  background-color: #f7f7f7;
+  margin: 0px 60px;
+}
+
+.about__last .last_support {
+  gap: 30px;
+  overflow-x: scroll;
+  overflow: hidden;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+}
+
+.about__last .last_support img {
+  width: 189px;
+  height: 125px;
+}

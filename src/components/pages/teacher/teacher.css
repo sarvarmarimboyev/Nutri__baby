@@ -1,0 +1,175 @@
+/* h1 {
+      text-align: center;
+      font-size: 55px;
+      padding: 150px;
+    }
+    */
+.our__teacher {
+  padding: 90px 0px 50px 0px;
+}
+.our__teacher .container {
+  padding: 0px 3%;
+}
+
+.our__teacher .container .head__content {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.our__teacher .container .head__content h3 {
+  font-weight: 100;
+  font-size: 50px;
+  color: #ff97a4;
+}
+.our__teacher .container .cards {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.our__teacher .container .cards .card {
+  width: 500px;
+  height: 220px;
+  padding: 0px;
+  border: 2px solid #f7f1f1;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.our__teacher .container .cards .card img {
+  width: 220px;
+  height: 218px;
+  border-radius: 10px 0px 0px 10px;
+}
+.our__teacher .container .cards .card .card__content {
+  align-items: center;
+  display: grid;
+  padding: 20px;
+}
+
+.our__teacher .container .cards .card .card__content h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.our__teacher .container .cards .card .card__content h2 {
+  color: #7e8d9f;
+  font-weight: 100;
+  font-size: 13px;
+  padding: 7px 0px 20px 0px;
+}
+.our__teacher .container .cards .card .card__content p {
+  font-size: 13px;
+  color: #7e8d9f;
+  line-height: 18px;
+}
+.our__teacher .container .cards .card .card__content .icons ul {
+  display: flex;
+  padding-top: 15px;
+  color: #fff;
+  gap: 28px;
+}
+
+.our__teacher .container .cards .card .card__content .icons ul li {
+  background-color: #7dd0f8;
+  border-radius: 50%;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+.our__teacher .enroll {
+  background-color: #ff97a4;
+  margin-top: 80px;
+}
+.our__teacher .enroll .enroll__head .enroll__content {
+  text-align: center;
+}
+
+.our__teacher .enroll .enroll__head {
+  display: flex;
+  justify-content: center;
+
+  padding: 70px 0px 40px 0px;
+}
+.our__teacher .enroll .enroll__content h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: 100;
+}
+.our__teacher .enroll .enroll__head .cloud img {
+  right: 0;
+  padding-right: 50px;
+  position: absolute;
+}
+
+.our__teacher .enroll .contact {
+  padding: 20px 120px;
+}
+
+.our__teacher .enroll .contact .inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.our__teacher .enroll .contact input {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  margin: 10px;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 15px;
+  border-radius: 7px;
+}
+::placeholder {
+  color: #fff;
+}
+.our__teacher .enroll textarea {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  margin: 10px;
+  transition: all 0.5s;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0px 15px;
+  border-radius: 7px;
+  width: 98.3%;
+}
+.our__teacher .enroll .cloud2 img {
+  right: 0;
+  position: absolute;
+}
+.our__teacher .enroll .enroll__more {
+  display: flex;
+  justify-content: center;
+}
+.our__teacher .enroll .learnmore {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0px;
+  align-items: center;
+  padding: 0 22px;
+  background-image: url(../../../assets//img/btn-01.png);
+  background: center contain no-repeat;
+  padding: 20 22px;
+  width: 157px;
+  height: 55px;
+}
+.our__teacher .enroll .learnmore a {
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.our__teacher .enroll .learnmore h4 {
+  margin-right: 5px;
+}
+.our__teacher .enroll .last__cloud img {
+  width: 100%;
+  margin-bottom: -4px;
+}

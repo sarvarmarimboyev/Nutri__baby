@@ -1,0 +1,59 @@
+.container {
+  padding: 0px 120px;
+}
+
+.blog__last {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ff97a4;
+  margin: 50px 0px;
+  padding: 40px 120px 0px 120px;
+}
+
+.blog__last img {
+  width: 408px;
+  height: 270px;
+}
+
+.blog__last .last__content {
+  color: #fff;
+
+  text-align: center;
+}
+.blog__last .last__content h1 {
+  font-size: 22px;
+  padding-top: 40px;
+  font-weight: 400;
+}
+.blog__last .last__content p {
+  padding: 20px 0px;
+  font-size: 14px;
+}
+.blog__last .enroll .enroll__more {
+  display: flex;
+  justify-content: center ;
+}
+.blog__last .enroll__more .learnmore {
+  display: flex;
+  justify-content: center ;
+  margin: 30px 35%;
+  align-items: center;
+  padding: 0 22px;
+  background-image: url(../../../assets//img/btn-01.png);
+  background: center contain no-repeat;
+  padding: 20 22px;
+  width: 157px;
+  height: 55px;
+}
+
+.blog__last .enroll__more .learnmore a {
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.blog__last .enroll__more .learnmore h4 {
+  margin-right: 5px;
+}
