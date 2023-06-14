@@ -1,13 +1,14 @@
 import { Card, Pagination } from "antd";
 import "./class.css";
 import React from "react";
-import Footer from "../../footer/Footer";
 import Home from "../home/Home";
 import "./class.css";
 import Pen from "../../../assets/img/pen.png"
-
+import Main5 from "../../../assets/img/main5.jpg"
 import Line1 from "../../../assets/img/line-blue.png";
-import Main2 from "../../../assets/img/main24.jpg";
+import Course1 from "../../../assets/img/course1 (1).jpg"
+
+
 const data = [
   {
     id: 1,
@@ -148,7 +149,7 @@ const Class = () => {
       </div>
       <div className="main">
         <div className="main__img">
-          <img src={Main2} alt="" />
+          <img src={Main5} alt="" />
         </div>
         <div className="box">
           <h3>Classes</h3>
@@ -204,7 +205,6 @@ const Class = () => {
           onChange={handlePageChange}
           pageSize={1}
         />
-        <Footer />
       </div>
     </>
   );

@@ -4,9 +4,11 @@ import Navbar from './components/navbar/Navbar';
 import Home from './components/pages/home/Home';
 import About from './components/pages/about/About';
 import Blog from './components/pages/blog/Blog';
-import Shop from './components/pages/purchase/Shop';
+import Shop from './components/pages/Shop/Shop';
 import Class from './components/pages/classes/Class';
 import Teacher from './components/pages/teacher/Teacher';
+import Purchase from './components/purchase/Purchase';
+import Footer from './components/footer/Footer';
 
 
 const App = () => {
@@ -34,7 +36,13 @@ const App = () => {
           <Route path='/Shop' compoent={Shop} exact>
             <Shop />
           </Route>
+
+
+          <Route path='/purchase' compoent={Purchase} exact>
+            <Purchase />
+          </Route>
         </Switch>
+        <Footer/>
       </Router>
     </>
 

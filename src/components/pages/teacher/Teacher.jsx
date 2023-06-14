@@ -1,7 +1,6 @@
 import React from "react";
-import Footer from "../../footer/Footer";
 import "./teacher.css";
-import Main25_2 from "../../../assets/img/main25(2).jpg";
+import Main32 from "../../../assets/img/main32.jpg";
 import Line1 from "../../../assets/img/line-blue.png";
 import Line2 from "../../../assets/img/line-white.png";
 import Pen from "../../../assets/img/pen.png";
@@ -24,7 +23,7 @@ export default function Teacher() {
 
       <div className="main">
         <div className="main__img">
-          <img src={Main25_2} alt="" />
+          <img src={Main32} alt="" />
         </div>
         <div className="box">
           <h3>Teacher</h3>
@@ -244,7 +243,6 @@ export default function Teacher() {
         </div>
       </section>
 
-      <Footer />
     </>
   );
 }

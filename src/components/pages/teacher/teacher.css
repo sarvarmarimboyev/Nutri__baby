@@ -4,6 +4,43 @@
       padding: 150px;
     }
     */
+
+.main {
+  width: 100%;
+}
+.main .main__img img {
+  height: 70vh;
+  width: 100%;
+}
+.main .box {
+  width: 300px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px 30px 0;
+  margin-bottom: -7px;
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 110px;
+}
+.main .box h3 {
+  font-size: 40px;
+  color: #ff97a4;
+  margin-bottom: 2px;
+  font-weight: 400;
+}
+.main .box img {
+  width: 154px;
+  padding: 5px 0px 18px 0px;
+}
+.main .box p {
+  margin-bottom: 15px;
+}
+.main .box p {
+  color: #8d8d8d;
+  margin-bottom: 15px;
+}
+
 .our__teacher {
   padding: 90px 0px 50px 0px;
 }
@@ -31,6 +68,7 @@
 }
 .our__teacher .container .cards .card {
   width: 500px;
+  cursor: default;
   height: 220px;
   padding: 0px;
   border: 2px solid #f7f1f1;
@@ -39,9 +77,18 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.our__teacher .container .cards .card img:hover{
+  transform: scale(1.05);
+  overflow: hidden;
+
+  border-radius: 10px;
+
+}
 .our__teacher .container .cards .card img {
   width: 220px;
   height: 218px;
+  cursor: pointer;
+  transition: .5s;
   border-radius: 10px 0px 0px 10px;
 }
 .our__teacher .container .cards .card .card__content {
@@ -72,11 +119,16 @@
   color: #fff;
   gap: 28px;
 }
+.our__teacher .container .cards .card .card__content .icons ul li:hover {
+  background-color: #ff97a4;
+  transition: .5s;
+}
 
 .our__teacher .container .cards .card .card__content .icons ul li {
   background-color: #7dd0f8;
   border-radius: 50%;
   padding: 8px;
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
@@ -98,6 +150,7 @@
   color: #fff;
   font-size: 45px;
   font-weight: 100;
+  padding-bottom: 15px;
 }
 .our__teacher .enroll .enroll__head .cloud img {
   right: 0;

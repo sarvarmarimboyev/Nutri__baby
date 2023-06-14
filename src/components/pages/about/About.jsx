@@ -1,7 +1,6 @@
 import React from "react";
 import "./about.css";
-import Footer from "./../../footer/Footer";
-import Main2 from "../../../assets/img/main2.jpg";
+import Main2 from "../../../assets/img/main27.jpg";
 import Line1 from "../../../assets/img/line-blue.png";
 import Home from "../home/Home";
 import { FaAngleRight } from "react-icons/fa";
@@ -130,7 +129,6 @@ function About() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

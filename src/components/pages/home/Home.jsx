@@ -1,23 +1,36 @@
 import "./home.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Main39 from "../../../assets/img/main39.jpg";
 import WelcomeImg from "../../../assets/img/main4.jpg";
 import Line from "../../../assets/img/line-blue.png";
 import Main10 from "../../../assets/img/main10.jpg";
 import Main11 from "../../../assets/img/main11.png";
 import Main12 from "../../../assets/img/main12.jpg";
-import Main25 from "../../../assets/img/main25.jpg";
+import Main25 from "../../../assets/img/main41.png";
 import { FaAngleRight } from "react-icons/fa";
-import Main32 from "../../../assets/img/main32.jpg";
+import Main32 from "../../../assets/img/main44 (5).jpg";
 import Line2 from "../../../assets/img/line-white.png";
-import Footer from "../../footer/Footer";
 import Caruselleft from "../../../assets/img/carusle-left.png";
 import Caruselright from "../../../assets/img/carusle-right.png";
 import Cloud from "../../../assets/img/bg-cloud-01.jpg";
-import Main38 from "../../../assets/img/main38.jpg";
 import Btn02 from "../../../assets/img/btn-02.png";
 import Main30 from "../../../assets/img/main30.jpg";
 import Pen from "../../../assets/img/pen.png";
+import Class1 from "../../../assets/img/class1 (1).jpg";
+import Class2 from "../../../assets/img/class1 (2).jpg";
+import Class3 from "../../../assets/img/class1 (3).jpg";
+import Class4 from "../../../assets/img/class1 (4).jpg";
+import Teacher1 from "../../../assets/img/teacher1 (1).jpg";
+import Teacher2 from "../../../assets/img/teacher1 (2).jpg";
+import Teacher3 from "../../../assets/img/teacher1 (3).jpg";
+import Teacher4 from "../../../assets/img/main12.jpg";
+import Main29 from "../../../assets/img/main29.jpg";
+
+
+
+
+
+
 function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -34,6 +47,14 @@ function Home() {
       prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  useEffect(() => {
+    const slideInterval = setInterval(goToNextSlide, 2000);
+    return () => {
+      clearInterval(slideInterval);
+    };
+  }, [goToNextSlide]);
+
   return (
     <>
       <div className="pen">
@@ -50,20 +71,21 @@ function Home() {
           <div className="carousel-content">
             <div className="carousel-description">
               <p>#Nutri Baby Information</p>
-              <h2 className="carousel-title">Baby creative art from drawing</h2>
+              <h2 className="carousel-title">
+                Baby creative art from <br /> drawing
+              </h2>
             </div>
-          
+            <div className="learnmore">
+              <a href="@user">
+                <h4>LEARN MORE</h4>
+                <FaAngleRight />
+                <FaAngleRight />
+              </a>
+            </div>
           </div>
-  <div className="pagination">
-              <img src={Caruselleft} alt="" onClick={goToPreviousSlide} />
-              <img src={Caruselright} alt="" onClick={goToNextSlide} />
-            </div>
-          <div className="learnmore">
-            <a href="@user">
-              <h4>LEARN MORE</h4>
-              <FaAngleRight />
-              <FaAngleRight />
-            </a>
+          <div className="pagination">
+            <img src={Caruselleft} alt="" onClick={goToPreviousSlide} />
+            <img src={Caruselright} alt="" onClick={goToNextSlide} />
           </div>
         </div>
       </section>
@@ -136,12 +158,12 @@ function Home() {
                 <div className="price">
                   <p>$35</p>
                 </div>
-                <img src={Main38} alt="" />
+                <img src={Class1} alt="" />
               </div>
             </div>
             <div className="box">
               <div className="box__content">
-                <h3>Music Classes</h3>
+                <h3>Art Classes</h3>
                 <p>
                   08:00 am - 05:00 pm <br />
                   <br />
@@ -153,8 +175,8 @@ function Home() {
                 </div>
               </div>
               <div className="box__img">
-                <div className="price">$35</div>
-                <img src={Main38} alt="" />
+                <div className="price">$55</div>
+                <img src={Class2} alt="" />
               </div>
             </div>
           </div>
@@ -162,12 +184,12 @@ function Home() {
             <div className="box">
               <div className="box__img">
                 <div className="price">
-                  <p>$35</p>
+                  <p>$29</p>
                 </div>
-                <img src={Main38} alt="" />
+                <img src={Class3} alt="" />
               </div>
               <div className="box__content">
-                <h3>Music Classes</h3>
+                <h3>Color Classes</h3>
                 <p>
                   08:00 am - 05:00 pm <br />
                   <br />
@@ -182,9 +204,9 @@ function Home() {
             <div className="box">
               <div className="box__img">
                 <div className="price">
-                  <p>$35</p>{" "}
+                  <p>$35</p>
                 </div>
-                <img src={Main38} alt="" />
+                <img src={Class4} alt="" />
               </div>
 
               <div className="box__content">
@@ -236,31 +258,31 @@ function Home() {
             </div>
             <div className="right">
               <div className="box">
-                <img src={Main39} alt="" />
+                <img src={Teacher1} alt="" />
                 <div className="box__title">
                   <h3>Wictoria Lawson</h3>
                   <p>Music Teacher</p>
                 </div>
               </div>
               <div className="box">
-                <img src={Main39} alt="" />
+                <img src={Teacher2} alt="" />
                 <div className="box__title">
-                  <h3>Wictoria Lawson</h3>
-                  <p>Music Teacher</p>
+                  <h3>Grace Johnson</h3>
+                  <p>Art Teacher</p>
                 </div>
               </div>
               <div className="box">
-                <img src={Main39} alt="" />
+                <img src={Teacher3} alt="" />
                 <div className="box__title">
-                  <h3>Wictoria Lawson</h3>
-                  <p>Music Teacher</p>
+                  <h3>Victoria Lawson</h3>
+                  <p>Drawing Teacher</p>
                 </div>
               </div>
               <div className="box">
-                <img src={Main39} alt="" />
+                <img src={Teacher4} alt="" />
                 <div className="box__title">
-                  <h3>Wictoria Lawson</h3>
-                  <p>Music Teacher</p>
+                  <h3>Stephanie Arnold</h3>
+                  <p>Language Teacher</p>
                 </div>
               </div>
             </div>
@@ -295,7 +317,7 @@ function Home() {
                   <h1>20</h1>
                   <p>June</p>
                 </div>
-                <img src={Main30} alt="" />
+                <img src={Main29} alt="" />
               </div>
               <div className="box__contenet">
                 <h1>How to grom</h1>
@@ -309,13 +331,13 @@ function Home() {
             <div className="box">
               <div className="box__head">
                 <div className="date">
-                  <h1>20</h1>
+                  <h1>30</h1>
                   <p>June</p>
                 </div>
                 <img src={Main30} alt="" />
               </div>
               <div className="box__contenet">
-                <h1>How to grom</h1>
+                <h1>How to coax children</h1>
                 <h4>By Jhon Hart / 0 Comment</h4>
                 <p>
                   Neque porro quisquam est, qui dolorem ipsum quia dolor sit
@@ -326,7 +348,6 @@ function Home() {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 }

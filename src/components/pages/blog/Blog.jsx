@@ -1,14 +1,12 @@
 import React from "react";
 import "./blog.css";
 import { Card, Pagination } from "antd";
-import Footer from "../../footer/Footer";
 import Home from "./../home/Home";
 import Line1 from "../../../assets/img/line-blue.png";
-import Main25_2 from "../../../assets/img/main25(2).jpg";
 import Main37 from "../../../assets/img/main37.jpg";
 import Pen from "../../../assets/img/pen.png";
 import { FaAngleRight } from "react-icons/fa";
-
+import Main15 from "../../../assets/img/main15.jpg"
 const data = [
   {
     id: 1,
@@ -149,7 +147,7 @@ const Blog = () => {
       </div>
       <div className="main">
         <div className="main__img">
-          <img src={Main25_2} alt="" />
+          <img src={Main15} alt="" />
         </div>
         <div className="box">
           <h3>Blog</h3>
@@ -226,7 +224,6 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

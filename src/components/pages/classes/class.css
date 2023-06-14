@@ -1,31 +1,37 @@
 .main {
   width: 100%;
+  padding-top: 100px;
 }
-.main__img img {
-  height: 60vh;
-  width: 100%;
+.main .main__img img {
+  height: 100% !important;
+  width: 100% !important;
 }
 .main .box {
-  width: 30%;
+  width: 300px;
   background: #fff;
   overflow: hidden;
   border-radius: 10px 10px 0px 0px;
   padding: 20px 30px 0;
   margin-bottom: -7px;
   position: absolute;
-  margin-top: -150px;
+  margin-top: -130px;
   margin-left: 110px;
 }
 .main .box h3 {
-  font-size: 55px;
+  font-size: 30px;
   color: #ff97a4;
   margin-bottom: 2px;
   font-weight: 400;
 }
 .main .box img {
+  width: 154px;
   padding: 5px 0px 18px 0px;
 }
 .main .box p {
+  margin-bottom: 15px;
+}
+.main .box p {
+  color: #8d8d8d;
   margin-bottom: 15px;
 }
 
@@ -111,4 +117,10 @@
 .age-size {
   font-size: 14px;
   color: #555;
+}
+@media(max-width:768px){
+
+  .main{
+    padding-top: 0px;
+  }
 }
