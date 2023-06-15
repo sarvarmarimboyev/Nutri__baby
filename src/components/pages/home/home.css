@@ -7,15 +7,10 @@
   margin: 0px 20px 10px 0px;
 }
 
-.container {
-  padding: 120px 70px;
-}
 
 .first .carousel-container {
-  /* position: absolute; */
-  /* margin-top: 120px; */
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -31,17 +26,14 @@
   position: absolute;
   text-align: left !important;
   top: 50%;
-  left: 65%;
+  margin-left: 60%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
 }
 
-
-.first .carousel-container .carousel-content h2{
+.first .carousel-container .carousel-content h2 {
   padding: 20px 0px;
-
-
 }
 
 .carousel-title {
@@ -62,8 +54,6 @@
   position: absolute;
   top: 50%;
   z-index: 1;
-  /* background-color: red; */
-  /* margin-right: 50px; */
 }
 .carousel-button {
   margin-top: 2rem;
@@ -111,7 +101,7 @@
 }
 
 .secound .container {
-  padding: 100px 70px 30px 70px;
+  padding: 100px 10px 30px 10px;
 }
 .secound .welcome {
   text-align: center;
@@ -125,7 +115,7 @@
 }
 
 .welcome img {
-  width: 10%;
+  width: 100px;
 }
 .welcome__bottom {
   padding: 50px 0px;
@@ -167,12 +157,13 @@
 .third .third__head h2 {
   color: #fff;
   font-weight: 600;
+
   font-size: 40px;
-  padding: 20px 0px;
+  padding: 70px 0px 20px 0px;
 }
 
 .third .boxs {
-  padding: 30px 120px;
+  padding: 30px 10px;
   justify-content: center;
   gap: 30px;
   display: flex;
@@ -311,10 +302,11 @@
 }
 
 .four .four__img {
-  display: grid;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
   gap: 20px;
   text-align: center;
-  grid-template-columns: 1fr 1fr;
 }
 
 .four .four__img .left img {
@@ -329,7 +321,8 @@
   grid-template-columns: 1fr 1fr;
 }
 .four .four__img .right img {
-  width: 100%;
+  width: 300px;
+  height: 300px;
   border-radius: 10px;
 }
 .four .four__img .left h2 {
@@ -365,7 +358,7 @@
 }
 .five .container .collect {
   display: grid;
-  padding: 50px 0px;
+  padding: 50px;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -394,7 +387,6 @@
 }
 
 .five .container .collect .box .box__head img {
-  /* width: 100% ; */
   height: 240px;
   border-radius: 10px 10px 0px 0px;
 }
@@ -464,4 +456,186 @@
 }
 .carousel-button:hover {
   background-color: #eaeaea;
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    margin-top: -150px;
+    display: grid;
+    justify-content: center !important;
+  }
+
+  .secound .welcome .content {
+    font-size: 28px;
+  }
+  .secound .welcome__bottom .welcome__cards .welcome__card {
+    width: 200px;
+  }
+
+  .secound .welcome__bottom .welcome__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1240px) {
+  .four .four__img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1020px) {
+  .five .container .collect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .first .carousel-container .carousel-content{
+    margin-left: 50%;
+    top:35%;
+    display: grid;
+    justify-content: center;
+  }
+.first .carousel-container {
+height: 70vh;
+}
+
+.first .carousel-container .pagination{
+  top: 35%;
+}
+
+  .carousel-container .carousel-content p{
+    font-size: 19px;
+  }
+  .carousel-container .carousel-content h2{
+    font-size: 29px;
+    width: 100%;
+  }
+  
+  .third .third__head h2 {
+    font-size: 29px;
+  }
+  .third .third__head img {
+    width: 130px;
+  }
+
+  .third .boxs .box {
+    width: 400px;
+    height: 200px;
+  }
+
+  .third .boxs .left .box__content {
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .third .boxs .box img {
+    height: 200px !important;
+  }
+
+  .four .four__img .left img {
+    width: 300px;
+    height: 300px;
+  }
+  .four .four__img .left .bottom {
+    padding: 10px;
+  }
+  .four .four__img .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .third .boxs .box {
+    width: 270px;
+    height: 150px;
+  }
+  .third .boxs .left .box__content h3 {
+    font-weight: 100;
+    line-height: 25px;
+  }
+
+  .third .boxs .left .box__content h4 {
+    font-size: 10px;
+  }
+  .third .boxs .left .box__content p {
+    font-size: 10px;
+  }
+
+  .five .container .collect .collect__first .head {
+    margin-left: 10px;
+  }
+  .five .container .collect .collect__first p {
+    padding-right: 0px;
+  }
+
+  .third .boxs .right .box__content h3 {
+    font-weight: 100;
+    line-height: 25px;
+  }
+
+  .third .boxs .right .box__content h4 {
+    font-size: 10px;
+  }
+  .third .boxs .right .box__content p {
+    font-size: 10px;
+  }
+  .third .boxs .right .box__content {
+    padding: 10px;
+  }
+
+  .third .boxs .box .box__img .price {
+    width: 40px;
+    font-size: 20px;
+  }
+
+  .third .boxs .left img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .third .boxs .right img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .third .boxs .right .box__content {
+    font-size: 10px !important;
+  }
+
+  .four .four__title h1 {
+    font-size: 29px;
+  }
+  .four .four__title img {
+    width: 100px;
+  }
+
+  .four .four__img .left img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .four .four__img .right img {
+    width: 200px;
+    height: 200px;
+  }
+  .five .container .collect .box {
+    width: 260px;
+  }
+
+  .five .container .collect .box .box__contenet {
+    width: 260px;
+  }
+
+  .five .container .collect .box .box__head img {
+    width: 260px;
+    height: 200px;
+  }
 }

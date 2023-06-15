@@ -6,117 +6,106 @@ import Line1 from "../../../assets/img/line-blue.png";
 import Main37 from "../../../assets/img/main37.jpg";
 import Pen from "../../../assets/img/pen.png";
 import { FaAngleRight } from "react-icons/fa";
-import Main15 from "../../../assets/img/main15.jpg"
+import Main15 from "../../../assets/img/main15.jpg";
+
+import Course1 from "../../../assets/img/course1 (1).jpg";
+import Course2 from "../../../assets/img/course1 (2).jpg";
+import Course3 from "../../../assets/img/course1 (3).jpg";
+import Course4 from "../../../assets/img/course1 (4).jpg";
+import Course5 from "../../../assets/img/course1 (5).jpg";
+import Course6 from "../../../assets/img/course1 (6).jpg";
+
 const data = [
   {
     id: 1,
-    class: "Color Matching Class",
-    price: "$22",
-    image: "playgroup.jpg",
-    name: "John",
-    date: "June 1, 2023",
-    age: "1 - 2 years",
-    size: "12 seats",
+    price: "22",
+    date: "August",
+    image: Course1,
+    name: "Color Matching Class",
+    by: "By : Jhon Doe / 0 Comment",
+    discription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
   },
   {
     id: 2,
-    class: "Play Group",
-    price: "$25",
-    image: "playgroup2.jpg",
-    name: "Emma",
-    date: "June 3, 2023",
-    age: 4,
-    size: "Medium",
+    price: "25",
+    date: "July",
+    image: Course2,
+    name: "If you are going to use",
+    by: "By : Jhon Doe / 0 Comment",
+    discription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
   },
+
   {
     id: 3,
-    class: "Play Group",
-    price: "$38",
-    image: "playgroup2.jpg",
-    name: "Emma",
-    date: "June 3, 2023",
-    age: 4,
-    size: "Medium",
+    price: "15",
+    date: "June",
+    image: Course3,
+    name: "Neque porro quisquam",
+    by: "By : Jhon Doe / 0 Comment",
+    discription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
   },
   {
     id: 4,
-    class: "Play Group",
-    price: "$36",
-    image: "playgroup2.jpg",
-    name: "Emma",
-    date: "June 3, 2023",
-    age: 4,
-    size: "Medium",
+    price: "10",
+    date: "May",
+    image: Course4,
+    name: "On the other hand",
+    by: "By : Jhon Doe / 0 Comment",
+    discription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
   },
   {
     id: 5,
-    class: "Play Group",
-    price: "$41",
-    image: "playgroup2.jpg",
-    name: "Emma",
-    date: "June 3, 2023",
-    age: 4,
-    size: "Medium",
+    price: "31",
+    date: "October",
+    image: Course5,
+    name: "Righteous indignation",
+    by: "By : Jhon Doe / 0 Comment",
+
+    discription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
   },
   {
     id: 6,
-    class: "Play Group",
-    price: "$35",
-    image: "playgroup2.jpg",
-    name: "Emma",
-    date: "June 3, 2023",
-    age: 4,
-    size: "Medium",
+    price: "25",
+    date: "August",
+    image: Course6,
+    name: "Demoralized charms",
+    by: "By : Jhon Doe / 0 Comment",
+    discription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
   },
   {
-    id: 7,
-    class: "Play Group",
-    price: "$12",
-    image: "playgroup2.jpg",
-    name: "Emma",
-    date: "June 3, 2023",
-    age: 4,
-    size: "Medium",
+    id: 6,
+    price: "25",
+    date: "August",
+    image: Course6,
+    name: "Demoralized charms",
+    by: "By : Jhon Doe / 0 Comment",
+    discription:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
   },
-  {
-    id: 8,
-    class: "Play Group",
-    price: "$12",
-    image: "playgroup2.jpg",
-    name: "Emma",
-    date: "June 3, 2023",
-    age: 4,
-    size: "27 seats",
-  },
-  // Add more data objects for other cards
-  // ...
+
 ];
 
 let currentPage = 1;
-let selectedClass = "All classes"; // Default selected class
 
 const CardsPerPage = 6;
 const TotalPages = Math.ceil(data.length / CardsPerPage);
 
 const Blog = () => {
   const handlePageChange = (page) => {
-    // Implement logic to handle page change
     console.log("Current page:", page);
     currentPage = page;
   };
 
-  const handleClassClick = (className) => {
-    // Implement logic to handle class selection and sorting
-    console.log("Selected class:", className);
-    selectedClass = className;
-  };
 
   const renderCards = () => {
     let filteredData = data;
 
-    if (selectedClass !== "All classes") {
-      filteredData = data.filter((item) => item.class === selectedClass);
-    }
 
     const currentPageData = filteredData.slice(
       (currentPage - 1) * CardsPerPage,
@@ -124,17 +113,18 @@ const Blog = () => {
     );
 
     return currentPageData.map((item) => (
-      <Card key={item.id} className="card">
+      <Card key={item.id} className="blog__card">
         <div className="card-header">
-          <div className="price">{item.price}</div>
+          <div className="price">
+            <h1>{item.price}</h1> <h4>{item.date}</h4>
+          </div>
           <img src={item.image} alt="Class" className="image" />
         </div>
         <div className="card-content">
           <div className="name">{item.name}</div>
-          <div className="date">{item.date}</div>
-          <div className="age-size">
-            Age: {item.age} | Size: {item.size}
-          </div>
+
+          <div className="by">{item.by}</div>
+          <div className="discription">{item.discription}</div>
         </div>
       </Card>
     ));
@@ -142,7 +132,7 @@ const Blog = () => {
 
   return (
     <>
-        <div className="pen">
+      <div className="pen">
         <img src={Pen} alt="" />
       </div>
       <div className="main">
@@ -158,53 +148,18 @@ const Blog = () => {
           </p>
         </div>
       </div>
-      <div className="container">
-        <div className="app">
-          <div className="class-selector">
-            <div
-              className={`class-option ${
-                selectedClass === "All classes" ? "active" : ""
-              }`}
-              onClick={() => handleClassClick("All classes")}
-            >
-              All classes
-            </div>
-            <div
-              className={`class-option ${
-                selectedClass === "Play Group" ? "active" : ""
-              }`}
-              onClick={() => handleClassClick("Play Group")}
-            >
-              Play Group
-            </div>
-            <div
-              className={`class-option ${
-                selectedClass === "Primary" ? "active" : ""
-              }`}
-              onClick={() => handleClassClick("Primary")}
-            >
-              Primary
-            </div>
-            <div
-              className={`class-option ${
-                selectedClass === "Story" ? "active" : ""
-              }`}
-              onClick={() => handleClassClick("Story")}
-            >
-              Story
-            </div>
-          </div>
-          <div className="cards-container">{renderCards()}</div>
+      <div className="app">
+        <div className="cards-container">{renderCards()}</div>
 
-          <Pagination
-            className="pagination"
-            defaultCurrent={1}
-            total={TotalPages}
-            onChange={handlePageChange}
-            pageSize={1}
-          />
-        </div>
+        <Pagination
+          className="pagination"
+          defaultCurrent={1}
+          total={TotalPages}
+          onChange={handlePageChange}
+          pageSize={1}
+        />
       </div>
+
       <div className="blog__last">
         <img src={Main37} alt="" />
         <div className="last__content">

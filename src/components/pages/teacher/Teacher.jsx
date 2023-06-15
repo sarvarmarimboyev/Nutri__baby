@@ -4,10 +4,13 @@ import Main32 from "../../../assets/img/main32.jpg";
 import Line1 from "../../../assets/img/line-blue.png";
 import Line2 from "../../../assets/img/line-white.png";
 import Pen from "../../../assets/img/pen.png";
-
 import Home from "../home/Home";
 import Main13 from "../../../assets/img/main13.jpg";
+import Main4 from "../../../assets/img/main4.jpg";
 import Main26 from "../../../assets/img/main26.jpg";
+import Teacher3 from "../../../assets/img/teacher1 (3).jpg";
+import Teacher2 from "../../../assets/img/teacher1 (2).jpg";
+import Teacher1 from "../../../assets/img/teacher1 (1).jpg";
 import Cloud from "../../../assets/img/cloud-02.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
@@ -94,7 +97,7 @@ export default function Teacher() {
             </div>
 
             <div className="card">
-              <img src={Main13} alt="" />
+              <img src={Teacher1} alt="" />
               <div className="card__content">
                 <h1>Catherine Wade</h1>
                 <h2>Managing Director</h2>
@@ -119,7 +122,7 @@ export default function Teacher() {
             </div>
 
             <div className="card">
-              <img src={Main26} alt="" />
+              <img src={Teacher2} alt="" />
               <div className="card__content">
                 <h1>Stephanie Arnold</h1>
                 <h2>Language Teacher</h2>
@@ -144,7 +147,7 @@ export default function Teacher() {
             </div>
 
             <div className="card">
-              <img src={Main13} alt="" />
+              <img src={Teacher3} alt="" />
               <div className="card__content">
                 <h1>Tammy Lynch</h1>
                 <h2>Drawing Teacher</h2>
@@ -169,13 +172,13 @@ export default function Teacher() {
             </div>
 
             <div className="card">
-              <img src={Main26} alt="" />
+              <img src={Main4} alt="" />
               <div className="card__content">
-                <h1>Jane Davis</h1>
-                <h2>Managing Director</h2>
+                <h1>Tammy Lynch</h1>
+                <h2>Drawing Teacher</h2>
                 <p>
-                  These cases are perfectly simple and easy to distinguish. In a
-                  free hour, when our power
+                  On the other hand, we denounce with righteous indignation and
+                  dislike men beguiled
                 </p>
                 <div className="icons">
                   <ul>
@@ -188,7 +191,6 @@ export default function Teacher() {
                     <li>
                       <FaInstagram />
                     </li>
-                    ``
                   </ul>
                 </div>
               </div>

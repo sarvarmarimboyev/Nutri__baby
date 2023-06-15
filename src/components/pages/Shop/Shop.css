@@ -1,5 +1,6 @@
 .card {
   width: 240px;
+  padding-top: 25px;
   height: 355px;
   cursor: pointer;
   text-align: center;
@@ -7,7 +8,9 @@
 }
 
 .card h3 {
+  padding: 5px 10px;
   font-size: 24px;
+  
   font-weight: 100;
 }
 .card p {
@@ -22,6 +25,60 @@
   display: flex;
   justify-content: space-between;
 }
+
+.first .shopping .filter__section select {
+  padding: 7px 25px 7px 5px;
+  color: #8d8d8d;
+  border-radius: 7px;
+  border: 1px solid #8d8d8d;
+}
+
+
+.first .shopping .filter__options{
+  padding: 40px 0px;
+}
+.first .shopping .filter__options .head__categories{
+padding-bottom: 40px;
+}
+
+.first .shopping .filter__options .head__categories {
+  display: grid;
+
+}
+.first .shopping .filter__options .head__categories select{
+  width: 140px;
+  margin-top: 20px;
+}
+
+.first .shopping .filter__options .head__price{
+  display: grid;
+}
+.first .shopping .filter__options .head__price span{
+  color: #8d8d8d;
+  padding-top: 10px;
+}
+.first .shopping .filter__options .head__price input{
+  width: 200px;
+  margin-top: 15px;
+}
+.first .shopping .filter__options select{
+  padding: 7px 15px 7px 5px;
+  border-radius: 7px;
+  border: 1px solid #8d8d8d;
+  outline: none;
+  color: #8d8d8d;
+
+}
+
+
+.first .shopping .filter__options h3{
+  color: #ffa0ac;
+  font-size: 22px;
+}
+.first .shopping .filter__options img{
+  width: 100px;
+}
+
 .first .shopping .card__collect {
   display: grid;
   grid-template-columns: 2.4fr 0.6fr;
@@ -80,4 +137,63 @@
   font-weight: 600;
   align-items: center;
   display: flex;
+}
+
+
+@media(max-width:768){
+  .main .box{
+    width: 200px;
+    height: 120px;
+    margin-top: -110px;
+    margin-left: 5%;
+  } 
+  .main .box h3{
+    font-size: 20px;
+  }
+
+  
+  .main .box img{
+    width: 70px;
+
+  }
+
+  .main .box p{
+    font-size: 12px;
+  }
+}
+
+
+@media(max-width:500px){
+  
+  .main .box{
+    width: 150px ;
+    height: 65px ;
+    margin-top: -68px ;
+    margin-left: 5%;
+    padding: 10px ;
+  } 
+  .main .box h3{
+    font-size: 12px ;
+  }
+  
+  .main .box img{
+    width: 50px ;
+
+  }
+
+  .main .box p{
+    font-size: 9px;
+    margin-top: -10px;
+  }
+}
+
+@media(max-width:560px){
+  .first .shopping .card__collect{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+
 }

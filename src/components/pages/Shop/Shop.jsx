@@ -3,7 +3,17 @@ import Home from "../home/Home";
 import { useHistory } from "react-router-dom";
 import Main44_6 from "../../../assets/img/main44 (6).jpg";
 import Line1 from "../../../assets/img/line-blue.png";
-import Main40 from "../../../assets/img/main40.jpg";
+import Card7 from "../../../assets/img/main40.jpg";
+import Card8 from "../../../assets/img/main4.jpg";
+import Card1 from "../../../assets/img/class1 (1).jpg";
+import Card2 from "../../../assets/img/class1 (2).jpg";
+import Card3 from "../../../assets/img/class1 (3).jpg";
+import Card4 from "../../../assets/img/class1 (4).jpg";
+import Card5 from "../../../assets/img/class1 (5).jpg";
+import Card6 from "../../../assets/img/main38.jpg";
+import Card9 from "../../../assets/img/main44 (9).jpg";
+import Card10 from "../../../assets/img/main44.jpg";
+
 import Pen from "../../../assets/img/pen.png";
 import "./Shop.css";
 import Main37 from "../../../assets/img/main37.jpg";
@@ -16,7 +26,7 @@ const Card = ({ name, price, category, img }) => {
   const history = useHistory();
 
   const handleClick = () => {
-    history.push("/purchase"); 
+    history.push("/purchase");
     // Replace <Home /> with the desired component
   };
 
@@ -31,21 +41,21 @@ const Card = ({ name, price, category, img }) => {
 };
 
 const data = [
-  { name: "Card 1", img: Main40, price: 10, category: "Kids Education" },
-  { name: "Card 2", img: Main40, price: 20, category: "Sport Games" },
-  { name: "Card 3", img: Main40, price: 45, category: "Kindergarten" },
-  { name: "Card 4", img: Main40, price: 15, category: "Learning" },
-  { name: "Card 5", img: Main40, price: 8, category: "Kids Education" },
-  { name: "Card 6", img: Main40, price: 32, category: "Kindergarten" },
-  { name: "Card 7", img: Main40, price: 53, category: "Learning" },
-  { name: "Card 8", img: Main40, price: 23, category: "Sport Games" },
-  { name: "Card 9", img: Main40, price: 55, category: "Kindergarten" },
-  { name: "Card 10", img: Main40, price: 45, category: "Sport Games" },
-  { name: "Card 11", img: Main40, price: 65, category: "Learning" },
-  { name: "Card 12", img: Main40, price: 49, category: "Kindergarten" },
-  { name: "Card 13", img: Main40, price: 5, category: "Sport Games" },
-  { name: "Card 14", img: Main40, price: 50, category: "Kids Education" },
-  { name: "Card 15", img: Main40, price: 18, category: "Learning" },
+  { name: "Stress Relief", img: Card7, price: 10, category: "Kids Education" },
+  { name: "Dash Dot", img: Card8, price: 20, category: "Sport Games" },
+  { name: "Puppy Dog", img: Card1, price: 45, category: "Kindergarten" },
+  { name: "Water Squirt", img: Card2, price: 15, category: "Learning" },
+  { name: "Stress Relief", img: Card3, price: 8, category: "Kids Education" },
+  { name: "Stress Reliever", img: Card4, price: 32, category: "Kindergarten" },
+  { name: "Squeeze Toys", img: Card5, price: 53, category: "Learning" },
+  { name: "Soft Squishies", img: Card6, price: 23, category: "Sport Games" },
+  { name: "Ice Cream Cone", img: Card9, price: 55, category: "Kindergarten" },
+  { name: "Kawaii Squishies", img: Card10, price: 45, category: "Sport Games" },
+  { name: "Glasses Bear", img: Card1, price: 65, category: "Learning" },
+  { name: "Card Collect", img: Card3, price: 49, category: "Kindergarten" },
+  { name: "Minion Mel", img: Card2, price: 5, category: "Sport Games" },
+  { name: "Dash Dot", img: Card8, price: 50, category: "Kids Education" },
+  { name: "Stress Relief", img: Card7, price: 18, category: "Learning" },
 ];
 
 const Shop = () => {
@@ -126,25 +136,34 @@ const Shop = () => {
                 ))}
               </div>
               <div className="filter__options">
-                <select
-                  value={selectedCategory}
-                  onChange={handleCategoryChange}
-                >
-                  <option value="">All Categories</option>
-                  <option value="Kids Education">Kids Education</option>
-                  <option value="Sport Games">Sport Games</option>
-                  <option value="Kindergarten">Kindergarten</option>
-                  <option value="Learning">Learning</option>
-                </select>
+                <div className="head__categories">
+                  <h3>Categories</h3>
+                  <img src={Line1} alt="" />
 
-                <input
-                  type="range"
-                  min="0"
-                  max="50"
-                  value={priceFilter}
-                  onChange={handlePriceFilterChange}
-                />
-                <span>Price: ${priceFilter}</span>
+                  <select
+                    value={selectedCategory}
+                    onChange={handleCategoryChange}
+                  >
+                    <option value="">All Categories</option>
+                    <option value="Kids Education">Kids Education</option>
+                    <option value="Sport Games">Sport Games</option>
+                    <option value="Kindergarten">Kindergarten</option>
+                    <option value="Learning">Learning</option>
+                  </select>
+                </div>
+                <div className="head__price">
+                  <h3>Price</h3>
+                  <img src={Line1} alt="" />
+
+                  <input
+                    type="range"
+                    min="0"
+                    max="50"
+                    value={priceFilter}
+                    onChange={handlePriceFilterChange}
+                  />
+                  <span>Price: ${priceFilter}</span>
+                </div>
               </div>
             </div>
 

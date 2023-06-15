@@ -120,16 +120,17 @@
 .first .container .support .content .learnmore h4 {
   margin-right: 5px;
 }
-*/ .about__last {
+ .about__last {
   margin-top: 60px;
   background-color: #f7f7f7;
   margin: 0px 60px;
 }
-
+.about__last .last_support::-webkit-scrollbar{
+  display: none ;
+}
 .about__last .last_support {
   gap: 30px;
   overflow-x: scroll;
-  overflow: hidden;
   display: flex;
   padding: 50px;
   justify-content: center;
@@ -140,14 +141,84 @@
   height: 125px;
 }
 
-
-
-@media(max-width:1050px){
-
-.first .container .support {
-display: flex;
-
-flex-wrap: wrap;
-justify-content: center;
+@media (max-width: 1050px) {
+  .first .container .support {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
+
+@media (max-width: 768px) {
+  .first .container {
+    padding: 40px;
+  }
+
+  .first .container .support .picture img {
+    width: 240px;
+    height: 320px;
+  }
+  .first .container .support .picture .background_line {
+    width: 240px;
+    height: 320px;
+  }
+
+  .first .container .support .content p {
+    padding-right: 0px;
+  }
+  .main .box{
+    width: 200px;
+    height: 120px;
+    margin-top: -110px;
+    margin-left: 5%;
+  } 
+  .main .box h3{
+    font-size: 20px;
+  }
+  
+  .main .box img{
+    width: 70px;
+
+  }
+
+  .main .box p{
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .first .container .support .content h1{
+    font-size: 25px;
+  }
+  .first .container .support .content img{
+    width: 140px;
+  }
+  .first .container .support .content p{
+    font-size: 12px;
+  }
+
+
+
+
+  .main .box{
+    width: 150px ;
+    height: 65px ;
+    margin-top: -68px ;
+    margin-left: 5%;
+    padding: 10px ;
+  } 
+  .main .box h3{
+    font-size: 12px ;
+  }
+  
+  .main .box img{
+    width: 50px ;
+
+  }
+
+  .main .box p{
+    font-size: 9px ;
+    margin-top: -10px;
+  }
 }

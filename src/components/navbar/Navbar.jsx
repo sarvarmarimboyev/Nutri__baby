@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
         <nav className="navbar">
           <div className="logo">
-            <img src={Logo} alt="" />
+            <img src={Logo} alt=""/>
           </div>
           <ul
             className={Mobile ? "nav-links-mobile" : "nav-links"}
